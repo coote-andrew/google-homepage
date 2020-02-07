@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 0px;
+        justify-content: space-between;
+        height: 100vh;
+    }
+    li {
+        display: inline;
+    }
+
+    nav {
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        margin: 0px;
+        padding: 0px;
+        flex-grow: 1;
+
+    }
+    header {
+        top: 0px;
+        left: 0px;
+        margin: 0px;
+    }
+    ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100vw;
+    }
+
+    input {
+        border-radius: 15px;
+        height: 30px;
+        width: 60vw;
+        border-color: 1px solid black;
+        flex-grow: 1;
+    }
+
+    img {
+        flex-grow: 0;
+        flex-basis: content;
+        height: fit-content;
+        width: fit-content;
+        align-self: center;
+        padding-bottom: 30px;
+    }
+    main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #buttons {
+        display: flex;
+        width: 60vw;        
+    }
+    .buttons {
+        border-radius: 5px;
+        background-color: lightgray;
+        margin-top: 5px;
+    }
+    a {
+        text-decoration: none;
+    }
+
+</style>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <img src="googlelogo_color_272x92dp.png">
+        <form>
+            <input type="text"/>
+            <div id="buttons">
+                <input type="button" value="I'm feeling lucky" class="buttons"/>
+                <input type="submit" value="submit" class="buttons"/>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <ul>
+            <li>Advertising</li>
+            <li>Business</li>
+            <li>How Search works</li>
+        </ul>
+    </footer>
+</body>
+
+
+
+</html>
